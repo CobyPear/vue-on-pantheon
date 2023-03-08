@@ -5,9 +5,10 @@
   "scripts": {
     "dev": "vite",
     "build": "run-p type-check build-only",
+    "start": "echo noop",
     "preview": "vite preview",
     "test:unit": "vitest",
-    "build-only": "vite build --base=./public",
+    "build-only": "vite build",
     "type-check": "vue-tsc --noEmit -p tsconfig.vitest.json --composite false",
     "lint": "eslint . --ext .vue,.js,.jsx,.cjs,.mjs,.ts,.tsx,.cts,.mts --fix --ignore-path .gitignore",
     "format": "prettier --write src/"
